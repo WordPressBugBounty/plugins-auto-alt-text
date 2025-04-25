@@ -1,0 +1,1 @@
+# plugins-auto-alt-text
