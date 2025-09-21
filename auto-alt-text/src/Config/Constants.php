@@ -23,12 +23,24 @@ class Constants
     ];
     const AATXT_OPTION_FIELD_PROMPT_OPENAI = 'aatxt_prompt_openai';
     const AATXT_OPTION_FIELD_API_KEY_OPENAI = 'aatxt_api_key_openai';
+    const AATXT_OPTION_FIELD_API_KEY_ANTHROPIC = 'aatxt_api_key_anthropic';
+    const AATXT_OPTION_FIELD_MODEL_ANTHROPIC = 'aatxt_model_anthropic';
+    const AATXT_CLAUDE_SONNET_4 = 'claude-sonnet-4-20250514';
+    const AATXT_CLAUDE_HAIKU_3_5 = 'claude-3-5-haiku-20241022';
+
+    const AATXT_OPTION_FIELD_MODEL_ANTHROPIC_OPTIONS = [
+        self::AATXT_CLAUDE_HAIKU_3_5 => 'Claude 3.5 Haiku',
+        self::AATXT_CLAUDE_SONNET_4 => 'Claude Sonnet 4',
+    ];
+    const AATXT_API_VERSION = '2023-06-01';
+    const AATXT_OPTION_FIELD_PROMPT_ANTHROPIC = 'aatxt_prompt_anthropic';
     const AATXT_OPTION_FIELD_API_KEY_AZURE_COMPUTER_VISION = 'aatxt_api_key_azure_computer_vision';
     const AATXT_OPTION_FIELD_API_KEY_AZURE_TRANSLATE_INSTANCE = 'aatxt_api_key_azure_translate_instance';
     const AATXT_OPTION_TYPOLOGY_CHOICE_ARTICLE_TITLE = 'article-title';
     const AATXT_OPTION_TYPOLOGY_CHOICE_ATTACHMENT_TITLE = 'attachment-title';
     const AATXT_OPTION_TYPOLOGY_CHOICE_OPENAI = 'openai';
     const AATXT_OPTION_TYPOLOGY_CHOICE_AZURE = 'azure';
+    const AATXT_OPTION_TYPOLOGY_CHOICE_ANTHROPIC = 'anthropic';
     const AATXT_OPTION_TYPOLOGY_DEACTIVATED = 'deactivated';
     const AATXT_OPTION_FIELD_ENDPOINT_AZURE_COMPUTER_VISION = 'aatxt_endpoint-azure-computer-vision';
     const AATXT_OPTION_FIELD_ENDPOINT_AZURE_TRANSLATE_INSTANCE = 'aatxt_endpoint-azure-translate-instance';
@@ -55,4 +67,13 @@ class Constants
         'image/gif',
         'image/webp',
     ];
+
+    const AATXT_ANTHROPIC_ALLOWED_MIME_TYPES = [
+        'image/png',
+        'image/jpeg',
+        'image/gif',
+        'image/webp',
+    ];
+
+    const AATXT_ANTHROPIC_ENDPOINT = 'https://api.anthropic.com/v1/messages';
 }
