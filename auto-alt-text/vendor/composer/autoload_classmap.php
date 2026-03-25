@@ -31,6 +31,7 @@ return array(
     'AATXT\\App\\AltTextGeneratorAttachmentTitle' => $baseDir . '/src/App/AltTextGeneratorAttachmentTitle.php',
     'AATXT\\App\\AltTextGeneratorInterface' => $baseDir . '/src/App/AltTextGeneratorInterface.php',
     'AATXT\\App\\AltTextGeneratorParentPostTitle' => $baseDir . '/src/App/AltTextGeneratorParentPostTitle.php',
+    'AATXT\\App\\CLI\\AutoAltTextCommand' => $baseDir . '/src/App/CLI/AutoAltTextCommand.php',
     'AATXT\\App\\Configuration\\AIProviderConfig' => $baseDir . '/src/App/Configuration/AIProviderConfig.php',
     'AATXT\\App\\Configuration\\AnthropicConfig' => $baseDir . '/src/App/Configuration/AnthropicConfig.php',
     'AATXT\\App\\Configuration\\AzureConfig' => $baseDir . '/src/App/Configuration/AzureConfig.php',

@@ -4,7 +4,7 @@ Donate link: https://ko-fi.com/valeriomonti
 Tags: alt text, alt tag, accessibility, openai, seo
 Requires at least: 6.0
 Tested up to: 6.9.0
-Stable tag: 2.7.0
+Stable tag: 2.8.0
 Requires PHP: 7.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
@@ -80,6 +80,26 @@ Once the plugin is configured, each time an image is uploaded to the media libra
 For images already in the media library, you can create bulk alt texts. Open the Media Library in the "list" view, select the images for which to generate the alt text, and choose the "Generate alt text" bulk action. (Depending on the number of images chosen and their weight, this may take some time.)
 
 You can also generate the alt text of a single image directly from the media library. Open the Media Library in “grid” mode, choose the image for which to generate the alt text, and click the “Generate alt text” button. In no time the alt text field will be overwritten by the generated description.
+
+### WP-CLI
+If you prefer generating alt text in batch (e.g., to avoid processing in the Media Library UI), you can use WP-CLI.
+
+Generate alt text for a list of attachment IDs:
+
+`wp auto-alt-text generate --ids=123,456,789`
+
+Process all image attachments in batches:
+
+`wp auto-alt-text generate --all --limit=200 --offset=0`
+`wp auto-alt-text generate --all --limit=200 --offset=200`
+
+Dry run (no metadata updates):
+
+`wp auto-alt-text generate --ids=123,456 --dry-run`
+
+Force overwrite of existing alt text (even if “Keep existing alt text” is enabled):
+
+`wp auto-alt-text generate --all --limit=200 --offset=0 --force`
 
 **Notice**: If you choose one of the methods that involves the use of external APIs, the upload times for images in the media library might increase because it requires sending a request to the APIs, waiting for the external server to process, and waiting for a response.
 
@@ -172,6 +192,9 @@ Once you’ve re-entered your API Key (and, if desired, added the constants), hi
 6. Single image alt text generation
 
 == Changelog ==
+= 2.8.0 =
+- Implement WP CLI commands for generating alt text
+
 = 2.7.0 =
 - Migrate to the Responses API from the Chat Completion API for OpenAI
 - Remove o1 Mini deprecated model

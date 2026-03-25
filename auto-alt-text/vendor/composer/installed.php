@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'valeriomonti/auto-alt-text',
-        'pretty_version' => 'v2.7.0',
-        'version' => '2.7.0.0',
-        'reference' => '635905933038f1b1f01d055f6b16746a951938d5',
+        'pretty_version' => 'v2.8.0',
+        'version' => '2.8.0.0',
+        'reference' => 'aa2a6e1ec32f628da36b344d4dcbf654593b912b',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -62,9 +62,9 @@
             ),
         ),
         'valeriomonti/auto-alt-text' => array(
-            'pretty_version' => 'v2.7.0',
-            'version' => '2.7.0.0',
-            'reference' => '635905933038f1b1f01d055f6b16746a951938d5',
+            'pretty_version' => 'v2.8.0',
+            'version' => '2.8.0.0',
+            'reference' => 'aa2a6e1ec32f628da36b344d4dcbf654593b912b',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

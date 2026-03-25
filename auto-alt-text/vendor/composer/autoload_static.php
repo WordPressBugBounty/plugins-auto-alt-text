@@ -87,6 +87,7 @@ class ComposerStaticInit10c8041b50d7e5a4fa81c522395aaa61
         'AATXT\\App\\AltTextGeneratorAttachmentTitle' => __DIR__ . '/../..' . '/src/App/AltTextGeneratorAttachmentTitle.php',
         'AATXT\\App\\AltTextGeneratorInterface' => __DIR__ . '/../..' . '/src/App/AltTextGeneratorInterface.php',
         'AATXT\\App\\AltTextGeneratorParentPostTitle' => __DIR__ . '/../..' . '/src/App/AltTextGeneratorParentPostTitle.php',
+        'AATXT\\App\\CLI\\AutoAltTextCommand' => __DIR__ . '/../..' . '/src/App/CLI/AutoAltTextCommand.php',
         'AATXT\\App\\Configuration\\AIProviderConfig' => __DIR__ . '/../..' . '/src/App/Configuration/AIProviderConfig.php',
         'AATXT\\App\\Configuration\\AnthropicConfig' => __DIR__ . '/../..' . '/src/App/Configuration/AnthropicConfig.php',
         'AATXT\\App\\Configuration\\AzureConfig' => __DIR__ . '/../..' . '/src/App/Configuration/AzureConfig.php',
