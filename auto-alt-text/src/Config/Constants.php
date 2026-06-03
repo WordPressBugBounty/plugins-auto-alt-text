@@ -33,6 +33,7 @@ class Constants
     const AATXT_OPTION_FIELD_MODEL_ANTHROPIC = 'aatxt_model_anthropic';
     const AATXT_CLAUDE_SONNET_4 = 'claude-sonnet-4-20250514';
     const AATXT_CLAUDE_HAIKU_3_5 = 'claude-3-5-haiku-20241022';
+    const AATXT_CLAUDE_FALLBACK_MODEL = 'claude-haiku-4-5';
 
     const AATXT_OPTION_FIELD_MODEL_ANTHROPIC_OPTIONS = [
         self::AATXT_CLAUDE_HAIKU_3_5 => 'Claude 3.5 Haiku',
@@ -79,4 +80,6 @@ class Constants
     ];
 
     const AATXT_ANTHROPIC_ENDPOINT = 'https://api.anthropic.com/v1/messages';
+    const AATXT_ANTHROPIC_MODELS_ENDPOINT = 'https://api.anthropic.com/v1/models';
+    const AATXT_ANTHROPIC_MODELS_CACHE_KEY = 'aatxt_anthropic_models_cache';
 }

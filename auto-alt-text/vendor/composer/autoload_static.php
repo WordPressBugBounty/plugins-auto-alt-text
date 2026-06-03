@@ -64,6 +64,7 @@ class ComposerStaticInit10c8041b50d7e5a4fa81c522395aaa61
     public static $classMap = array (
         'AATXT\\App\\AIProviders\\AIProviderInterface' => __DIR__ . '/../..' . '/src/App/AIProviders/AIProviderInterface.php',
         'AATXT\\App\\AIProviders\\AITranslatorInterface' => __DIR__ . '/../..' . '/src/App/AIProviders/AITranslatorInterface.php',
+        'AATXT\\App\\AIProviders\\Anthropic\\AnthropicModelsRegistry' => __DIR__ . '/../..' . '/src/App/AIProviders/Anthropic/AnthropicModelsRegistry.php',
         'AATXT\\App\\AIProviders\\Anthropic\\AnthropicResponse' => __DIR__ . '/../..' . '/src/App/AIProviders/Anthropic/AnthropicResponse.php',
         'AATXT\\App\\AIProviders\\Azure\\AzureComputerVisionCaptionsResponse' => __DIR__ . '/../..' . '/src/App/AIProviders/Azure/AzureComputerVisionCaptionsResponse.php',
         'AATXT\\App\\AIProviders\\Azure\\AzureTranslator' => __DIR__ . '/../..' . '/src/App/AIProviders/Azure/AzureTranslator.php',
@@ -114,6 +115,8 @@ class ComposerStaticInit10c8041b50d7e5a4fa81c522395aaa61
         'AATXT\\App\\Exceptions\\Azure\\AzureException' => __DIR__ . '/../..' . '/src/App/Exceptions/Azure/AzureException.php',
         'AATXT\\App\\Exceptions\\Azure\\AzureTranslateInstanceException' => __DIR__ . '/../..' . '/src/App/Exceptions/Azure/AzureTranslateInstanceException.php',
         'AATXT\\App\\Exceptions\\OpenAI\\OpenAIException' => __DIR__ . '/../..' . '/src/App/Exceptions/OpenAI/OpenAIException.php',
+        'AATXT\\App\\Infrastructure\\Cache\\CacheInterface' => __DIR__ . '/../..' . '/src/App/Infrastructure/Cache/CacheInterface.php',
+        'AATXT\\App\\Infrastructure\\Cache\\WordPressTransientCache' => __DIR__ . '/../..' . '/src/App/Infrastructure/Cache/WordPressTransientCache.php',
         'AATXT\\App\\Infrastructure\\Database\\ErrorLogSchema' => __DIR__ . '/../..' . '/src/App/Infrastructure/Database/ErrorLogSchema.php',
         'AATXT\\App\\Infrastructure\\Http\\HttpClientInterface' => __DIR__ . '/../..' . '/src/App/Infrastructure/Http/HttpClientInterface.php',
         'AATXT\\App\\Infrastructure\\Http\\WordPressHttpClient' => __DIR__ . '/../..' . '/src/App/Infrastructure/Http/WordPressHttpClient.php',

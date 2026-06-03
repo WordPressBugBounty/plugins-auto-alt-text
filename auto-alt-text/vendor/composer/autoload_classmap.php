@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'AATXT\\App\\AIProviders\\AIProviderInterface' => $baseDir . '/src/App/AIProviders/AIProviderInterface.php',
     'AATXT\\App\\AIProviders\\AITranslatorInterface' => $baseDir . '/src/App/AIProviders/AITranslatorInterface.php',
+    'AATXT\\App\\AIProviders\\Anthropic\\AnthropicModelsRegistry' => $baseDir . '/src/App/AIProviders/Anthropic/AnthropicModelsRegistry.php',
     'AATXT\\App\\AIProviders\\Anthropic\\AnthropicResponse' => $baseDir . '/src/App/AIProviders/Anthropic/AnthropicResponse.php',
     'AATXT\\App\\AIProviders\\Azure\\AzureComputerVisionCaptionsResponse' => $baseDir . '/src/App/AIProviders/Azure/AzureComputerVisionCaptionsResponse.php',
     'AATXT\\App\\AIProviders\\Azure\\AzureTranslator' => $baseDir . '/src/App/AIProviders/Azure/AzureTranslator.php',
@@ -58,6 +59,8 @@ return array(
     'AATXT\\App\\Exceptions\\Azure\\AzureException' => $baseDir . '/src/App/Exceptions/Azure/AzureException.php',
     'AATXT\\App\\Exceptions\\Azure\\AzureTranslateInstanceException' => $baseDir . '/src/App/Exceptions/Azure/AzureTranslateInstanceException.php',
     'AATXT\\App\\Exceptions\\OpenAI\\OpenAIException' => $baseDir . '/src/App/Exceptions/OpenAI/OpenAIException.php',
+    'AATXT\\App\\Infrastructure\\Cache\\CacheInterface' => $baseDir . '/src/App/Infrastructure/Cache/CacheInterface.php',
+    'AATXT\\App\\Infrastructure\\Cache\\WordPressTransientCache' => $baseDir . '/src/App/Infrastructure/Cache/WordPressTransientCache.php',
     'AATXT\\App\\Infrastructure\\Database\\ErrorLogSchema' => $baseDir . '/src/App/Infrastructure/Database/ErrorLogSchema.php',
     'AATXT\\App\\Infrastructure\\Http\\HttpClientInterface' => $baseDir . '/src/App/Infrastructure/Http/HttpClientInterface.php',
     'AATXT\\App\\Infrastructure\\Http\\WordPressHttpClient' => $baseDir . '/src/App/Infrastructure/Http/WordPressHttpClient.php',
