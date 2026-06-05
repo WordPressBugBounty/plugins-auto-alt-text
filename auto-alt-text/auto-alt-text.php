@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Auto Alt Text
  * Description: This plugin allows you to automatically generate an Alt Text for images uploaded into the media library via AI..
- * Version: 2.8.1
+ * Version: 2.8.2
  * Author: Valerio Monti
  * Author URI: https://www.vmweb.it
  * Text Domain: auto-alt-text
@@ -23,6 +23,13 @@ define('AATXT_FILE_ABSPATH', __FILE__);
 define('AATXT_ABSPATH', dirname(__FILE__));
 define('AATXT_URL', plugin_dir_url(__FILE__));
 define('AATXT_LANGUAGES_RELATIVE_PATH', dirname( plugin_basename( __FILE__ ) ) . '/languages/');
+
+// Prefixed (scoped) third-party dependencies, isolated via Strauss to avoid
+// collisions with other plugins/themes shipping the same packages (e.g. php-di,
+// psr/container under the Sage/Roots theme). Must load before the plugin autoloader.
+if ( file_exists( AATXT_ABSPATH . '/vendor-prefixed/autoload.php' ) ) {
+    require AATXT_ABSPATH . '/vendor-prefixed/autoload.php';
+}
 
 require AATXT_ABSPATH . '/vendor/autoload.php';
 
